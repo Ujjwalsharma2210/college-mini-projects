@@ -1,3 +1,10 @@
+###############################################
+#                                             #
+#       Author UjjwalSharma 19/10/2020        #
+#               Version 1.3                   #
+#               							  #
+###############################################
+
 import string
 from tkinter import *
 from tkinter import Tk
