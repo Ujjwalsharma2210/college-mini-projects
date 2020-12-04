@@ -56,12 +56,14 @@ def rand_ele(element):
         x=rand_char(97,123)
     return x
 
+# Converts the input list to string
 def listToString(arr):
     str = ""
     for element in arr:
         str += element
     return str
 
+# Prints the generated password to the output box
 def click():
     password = generatePassword()
     output.delete(0.0, END)
@@ -72,9 +74,11 @@ def click():
         randPass = "There is somethong wrong :("
     output.insert(END, randPass)
 
+# Clears the output box
 def clear():
     output.delete(0.0, END)
 
+# Generates the required specifications in the password.
 def generatePassword():
 
     length = rand_num(12,33)
@@ -96,9 +100,12 @@ def generatePassword():
 
     return password
 
+# Copies the contents of the varible randPass to the clipboard
 def copyToClipboard():
     pyperclip.copy(randPass)
 
+# This is the driver function which creates the window and displays the buttons, and
+# prints the output
 if __name__ == "__main__":
 
     win = Tk()
