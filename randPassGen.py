@@ -8,7 +8,6 @@
 import string
 from tkinter import *
 from tkinter import Tk
-import os
 from time import time
 import pyperclip
 
