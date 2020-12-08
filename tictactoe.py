@@ -76,11 +76,14 @@ def handle_turn(player):
 
     display_board()
 
+# Checks if the game has ended and a player has won or
+# the game is tied.
 def check_if_game_over():
     check_for_winner()
     check_if_tie()
 
-
+# Checks if any of the two palyers have won the game by
+# completing any of the row, column or diagonal.
 def check_for_winner():
 
     # set up global variables
@@ -103,6 +106,7 @@ def check_for_winner():
         winner = None
     return
 
+# Checks if there is a player who has completed any row.
 def check_rows():
     # set up global variables
     global game_still_going
@@ -122,7 +126,7 @@ def check_rows():
         return board[6]
     return
 
-
+# Checks if there is a player who has completed any column.
 def check_cloumns():
     # set up global variables
     global game_still_going
@@ -142,7 +146,7 @@ def check_cloumns():
         return board[2]
     return
 
-
+# Checks if there is a player who has completed a diagonal.
 def check_diagonals():
     # set up global variables
     global game_still_going
@@ -159,13 +163,14 @@ def check_diagonals():
         return board[2]
     return
 
-
+# Check if the game has tied after every turn
 def check_if_tie():
     global game_still_going
     if "-" not in board:
         game_still_going = False
     return
 
+# Changes the player after every correct turn.
 def flip_player():
     # global variables
     global current_player
@@ -177,13 +182,12 @@ def flip_player():
         current_player = "X"
     return
 
+# Calls the main game loop.
 play_game()
 
 
 
-
-
-
+# We need:
 
 # board
 # display board

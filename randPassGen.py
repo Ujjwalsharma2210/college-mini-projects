@@ -11,7 +11,10 @@ from tkinter import Tk
 from time import time
 import pyperclip
 
+# ----Global Variable----
+# Used to copy the generated password to clipboard
 randPass=""
+
 # For Generating random number
 def rand_num(x,y):
    sub=y-x
@@ -114,6 +117,7 @@ def copyToClipboard():
 # prints the output
 if __name__ == "__main__":
 
+    # Creating a window with title "Password Generator"
     win = Tk()
     win.title("Password Generator")
 
