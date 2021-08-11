@@ -186,15 +186,3 @@ def flip_player():
 play_game()
 
 
-
-# We need:
-
-# board
-# display board
-# play game
-# check win
-    # check rows
-    # check column
-    # check diagonal
-# check tie
-# flip player
